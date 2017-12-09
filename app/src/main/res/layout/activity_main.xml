@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id = "@+id/textZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:text="Rotate Z" />
+
+    <TextView
+        android:id = "@+id/textY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textZ"
+        android:layout_alignLeft="@id/textZ"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:text="Rotate Y" />
+
+    <TextView
+        android:id = "@+id/textX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textY"
+        android:layout_alignLeft="@id/textZ"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:text="Rotate X" />
+
+    <TextView
+        android:id = "@+id/textScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textX"
+        android:layout_alignLeft="@id/textZ"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:text="Scale" />
+
+    <SeekBar
+        android:id="@+id/seekZ"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textZ"
+        android:layout_alignTop="@id/textZ"
+        android:layout_marginLeft="5dp"
+        android:max="360"
+        android:min="0"
+        />
+
+    <SeekBar
+        android:id="@+id/seekY"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textY"
+        android:layout_alignTop="@id/textY"
+        android:layout_marginLeft="5dp"
+        android:max="360"
+        android:min="0"
+        />
+
+    <SeekBar
+        android:id="@+id/seekX"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textX"
+        android:layout_alignTop="@id/textX"
+        android:layout_marginLeft="5dp"
+        android:max="360"
+        android:min="0"
+        />
+
+    <SeekBar
+        android:id="@+id/seekScale"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textScale"
+        android:layout_alignStart="@id/seekZ"
+        android:max="10"
+        android:min="1"
+        />
+
+</RelativeLayout>
